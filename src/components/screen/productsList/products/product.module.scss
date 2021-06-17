@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    background-color: white;
+    border-bottom: solid 1px #cccccc;
+    padding: 10px;
+
+    & img {
+        width: 150px;
+        height: 150px;
+    }
+
+    & .infoContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        margin-left: 10px;
+
+        & .info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;    
+            
+            & .free_shipping{
+                position: relative;
+                left: 5px;
+                width: 20px;
+                height: 20px;
+                background: no-repeat url('../../../../assets/truck.png') green 50% 50%;
+                border-radius: 50%;
+            }
+        }
+
+    }
+
+    & p {
+        font-size: 20px;
+    }
+
+    & .link {
+        color: black;
+        text-decoration: none;
+        & p {
+            font-size: 15px;
+        }
+    }
+
+    & .condition {
+        width: 30%;
+        text-align: end;
+        & p {
+            color: #666;
+            font-size: 15px;
+        }
+    }
+}
